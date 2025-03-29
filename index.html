@@ -17,21 +17,25 @@
             <th>customer name</th>
             <th>pizza size</th>
             <th>pizza topping</th>
+            <th>delivery instruction</th>
         </tr>
         <tr>
             <td>susan</td>
             <td>medium</td>
             <td>extra cheese</td>
+            <td>none</td>
         </tr>
         <tr>
             <td>thomas</td>
             <td>large</td>
             <td>ham and pineapple</td>
+            <td>hurry quickly!</td>
         </tr>
         <tr>
             <td>ashley</td>
             <td>personal</td>
             <td>pepperoni</td>
+            <td>be there before 6</td>
         </tr>
     </table>
     <br>
@@ -39,15 +43,17 @@
         <label for="customer names">customer names</label>
         <input type="text">
     </form>
-    <form action="pizza size">
-        <label for="pizza size">pizza size</label>
+    <br>
+    <select>
+        <option value="extra cheese">extra cheese</option>
+        <option value="ham">ham</option>
+        <option value="pineapple">pineapple</option>
+        <option value="pepperoni">pepperoni</option>
+    </select>
+    <br>
+    <form action="devlivery instruction">
+        <label for="delivery instruction">delivery instruction</label>
         <input type="text">
-    </form>
-    <form action="pizza topping">
-        <label for="pizza topping">Pizza topping</label>
-        <input type="text">
-        <br>
-        <input type="button" value="sumbit">
     </form>
     <br>
     <input type="checkbox" id="names" name="names" value="name">
