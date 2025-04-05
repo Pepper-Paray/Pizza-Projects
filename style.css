@@ -1,0 +1,13 @@
+head {
+    border-style: solid;
+    text-align: center;
+}
+
+body {
+    background-image: URL(https://png.pngtree.com/png-vector/20240604/ourmid/pngtree-pizza-in-pixel-art-style-png-image_12626195.png);
+    text-overflow: ellipsis;
+}
+
+footer {
+    text-align: center;
+}
