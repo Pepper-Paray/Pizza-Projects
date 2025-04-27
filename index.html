@@ -39,12 +39,14 @@
             <td>be there before 6</td>
         </tr>
     </table>
+    <input type="checkbox" id="toppingCheckbox" name="topping" value="Pepperoni" />
+
     <br>
-    <form id="myForm">
+    <form id="toppingCheckbox">
         <input type="text" name="username" />
         <input type="submit" value="Submit" />
-      </form>
-      
+    </form>
+
     <form action="customer names">
         <label for="customer names">customer names</label>
         <input type="text">
@@ -70,6 +72,24 @@
     <label for="topping"> I have my pizza toppings</label>
     <br>
     <input type="button" value="sumbit">
+    <form action="/submit" method="POST">
+        <input type="text" name="name" />
+        <button type="submit">Submit</button>
+    </form>
+
+    <form id="names">
+        <input type="text" name="username" />
+        <input type="submit" value="Submit" />
+    </form>
+    <form id="topping">
+        <input type="text" name="username"/>
+        <input type="submit" value="Submit"/>
+    </form>
+    <form id="size">
+        <input type="text" name="username"/>
+        <input type="submit" value="Submit"/>
+    </form>
+
     <br>
     <script src="script.js" defer></script>
 </body>

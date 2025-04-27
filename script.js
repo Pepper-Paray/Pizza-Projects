@@ -1,28 +1,21 @@
-hello = "hello,I'm yummy pizza"
-console.log(hello)
-
-
+// Get form elements
 const form = document.getElementById("myForm");
+const usernameInput = document.getElementById("username");
+const submitButton = document.getElementById("submitBtn");
 
+// Add default value to username input
+usernameInput.value = "Default Value";
 
+// Handle form submission
 form.addEventListener("submit", function (event) {
-  event.preventDefault();
+  event.preventDefault(); // Prevent page refresh
   alert("Form submitted!");
 });
 
-const usernameInput = document.getElementById("username");
-usernameInput.value = "Default Value";
-
-const submitButton = document.getElementById("submitBtn");
+// Add click listener to submit button
 submitButton.addEventListener("click", function () {
   alert(`Entered username: ${usernameInput.value}`);
 });
 
+// if theres any bugs i did not catch please let me know?
 
-<form id="myForm"><input type="text" name="username"/> require&gt;
-  <button type="submit">Submit</button>
-</form>;
-<script> "src"="https://code.jquery.com/jquery-3.6.0.min.js"</script>;
-$('#myForm').on('submit', function (event) {
-  console.log('Form submitted!');
-});
