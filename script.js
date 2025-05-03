@@ -1,7 +1,7 @@
 // Get form elements
 const form = document.getElementById("myForm");
 const usernameInput = document.getElementById("username");
-const submitButton = document.getElementById("submitBtn");
+
 
 // Add default value to username input
 usernameInput.value = "Default Value";

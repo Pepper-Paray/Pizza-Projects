@@ -77,19 +77,29 @@
         <button type="submit">Submit</button>
     </form>
 
-    <form id="names">
-        <input type="text" name="username" />
-        <input type="submit" value="Submit" />
-    </form>
-    <form id="topping">
-        <input type="text" name="username"/>
-        <input type="submit" value="Submit"/>
-    </form>
-    <form id="size">
-        <input type="text" name="username"/>
-        <input type="submit" value="Submit"/>
-    </form>
+    <table id="table" border="1">
+        <tr>
+            <th>name</th>
+            <th>topping</th>
+            <th>size</th>
+        </tr</tr>
+    </table>
 
+    <button onclick="addRow()">Add Row</button>
+
+    <script>
+        function addRow() {
+            let table = document.getElementById("table");
+            let row = table.insertRow();
+            
+            row.innerHTML = `
+                <td><input type="text" placeholder="name"></td>
+                <td><input type="text" placeholder="topping"></td>
+                <td><input type="text" placeholder="size"></td>
+                <td><button onclick="this.parentNode.parentNode.remove()">Delete</button></td>
+            `;
+        }
+        </script>
     <br>
     <script src="script.js" defer></script>
 </body>
